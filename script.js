@@ -1,18 +1,12 @@
-/*function inIframe() {
-    try {
-        return window.self !== window.top;
-    } catch (e) {
-        return true;
-    }
-} */
+
 
 // function qui définit l'aléatoire des citations au moment du chargement de la page
 
 window.onload = function getQuote(){
 	index = Math.floor(Math.random()* quote.length)
 
-currentQuote = quote[index][0];
-currentAuthor = quote[index][1];
+  currentQuote = quote[index][0];
+  currentAuthor = quote[index][1];
 console.log(currentQuote);
 document.getElementById('quotetext').innerHTML = currentQuote;
 document.getElementById('quoteAuthor').innerHTML = currentAuthor;
@@ -24,12 +18,11 @@ document.getElementById('quoteAuthor').innerHTML = currentAuthor;
 
 function getQuote(){
 	index = Math.floor(Math.random()* quote.length);
-
-currentQuote = quote[index][0];
-currentAuthor = quote[index][1];
-console.log(currentQuote);
-document.getElementById('quotetext').innerHTML = currentQuote;
-document.getElementById('quoteAuthor').innerHTML = currentAuthor;
+  currentQuote = quote[index][0];
+  currentAuthor = quote[index][1];
+  console.log(currentQuote);
+  document.getElementById('quotetext').innerHTML = currentQuote;
+  document.getElementById('quoteAuthor').innerHTML = currentAuthor;
 
 }
 
