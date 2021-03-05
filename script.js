@@ -23,9 +23,7 @@ document.getElementById('quoteAuthor').innerHTML = currentAuthor;
 
 
 function getQuote(){
-	index = Math.floor(Math.random()* quote.length)
-  index = Math.floor(Math.random()*
-
+	index = Math.floor(Math.random()* quote.length);
 
 currentQuote = quote[index][0];
 currentAuthor = quote[index][1];
@@ -34,23 +32,6 @@ document.getElementById('quotetext').innerHTML = currentQuote;
 document.getElementById('quoteAuthor').innerHTML = currentAuthor;
 
 }
-
-
-
-function changeBG(){
-
-  document.getElementById('main').innerHTML = currentColor;
-}
-
-//function getColor(){
-
-/*index = Math.floor(Math.random()* colors.length)
-
-currentColor = colors[index][0];
-randomColor = colors [index] [1];
-
-document.getElementById('main').innerHTML = currentColor;
-}*/
 
 // Variable liste citations
 
@@ -75,28 +56,3 @@ let quote = [
 
 	let currentQuote = "";
 	let currentAuthor = "";
-	let randomColor = "";
-	let currentColor = "";
-
-
-
-let colors = [
-			'#490A3D',
-			'#BD1550',
-			'#E97F02',
-			'#F8CA00',
-			'#8A9B0F',
-			'#69D2E7',
-			'#FA6900',
-			'#16a085',
-			'#27ae60',
-			'#2c3e50',
-			'#f39c12',
-			'#e74c3c',
-			'#9b59b6',
-			'#FB6964',
-			'#342224',
-			'#472E32',
-			'#77B1A9',
-			'#73A857'
-		];
